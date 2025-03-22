@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+# Change nginx to listen to port 8080 and allow user nginx to start the nginx.
+
+sed "s/80/8080/g" /etc/nginx/sites-available/default
+
+chmod 644 /etc/nginx/nginx.conf
+
+sudo -u nginx service nginx start
