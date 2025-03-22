@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+username=$1
+
+if [[ -z "$username" ]]; then
+  whoami
+else
+  sudo -u $username whoami
+fi
