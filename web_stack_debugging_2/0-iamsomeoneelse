@@ -5,5 +5,5 @@ username=$1
 if [[ -z "$username" ]]; then
   whoami
 else
-  sudo -u $username whoami
+  sudo -u "$username" whoami
 fi
